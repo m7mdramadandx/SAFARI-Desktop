@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactUsController">
+   <children>
+      <ImageView fx:id="img_mainLogo" fitHeight="768.0" fitWidth="1366.0">
+         <image>
+            <Image url="@../../images/mainLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="14.0" text="SA" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="14.0" text="FARI" textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="361.0" text="Phone Number :" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="618.0" layoutY="407.0" text="E-mail :" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="556.0" layoutY="450.0" text="Fax Number :" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="600.0" layoutY="501.0" text="Address :" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="704.0" layoutY="365.0" text="0101 325 7583" textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="704.0" layoutY="411.0" prefHeight="27.0" prefWidth="199.0" text="safari.trevel@gmail.com" textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="704.0" layoutY="454.0" text="45-98" textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="505.0" text="Shebin El-kom - Stad Street." textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_back" fitHeight="35.0" fitWidth="47.0" layoutX="14.0" layoutY="10.0" onMouseClicked="#img_back_action" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../../images/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
