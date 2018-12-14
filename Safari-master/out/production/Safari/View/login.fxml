@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fx:id="img_mainLogo" fitHeight="728.0" fitWidth="1366.0">
+         <image>
+            <Image url="@../images/mainLogo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="392.0" layoutY="305.0" prefHeight="364.0" prefWidth="571.0" style="-fx-border-color: #DDD; -fx-border-radius: 50;">
+         <children>
+            <ImageView fx:id="img_user" fitHeight="39.0" fitWidth="42.0" layoutX="128.0" layoutY="48.0">
+               <image>
+                  <Image url="@../images/man.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_password" fitHeight="39.0" fitWidth="42.0" layoutX="128.0" layoutY="125.0">
+               <image>
+                  <Image url="@../images/lock (1).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl_forgetPaswd" layoutX="311.0" layoutY="196.0" onMouseClicked="#lbl_forgetPaswd_action" prefHeight="27.0" prefWidth="128.0" text="Forget Password ?" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="179.0" layoutY="289.0" prefHeight="39.0" prefWidth="144.0" text="I'm Not A Member !" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_signUp" layoutX="335.0" layoutY="296.0" onMouseClicked="#lbl_signUp_action" prefHeight="27.0" prefWidth="55.0" text="Sign Up" textFill="#2e2c3c">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <JFXPasswordField fx:id="uspass" focusColor="#08a966" labelFloat="true" layoutX="192.0" layoutY="125.0" prefHeight="39.0" prefWidth="232.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXPasswordField>
+            <JFXTextField fx:id="usname" focusColor="#08a966" labelFloat="true" layoutX="192.0" layoutY="48.0" prefHeight="39.0" prefWidth="232.0" promptText="Username" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <JFXCheckBox fx:id="check_rememberMe" layoutX="138.0" layoutY="196.0" onAction="#check_rememberMe_action" prefHeight="27.0" prefWidth="128.0" text="Rembeber Me" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton fx:id="bt_login" buttonType="RAISED" layoutX="213.0" layoutY="233.0" onAction="#bt_login_action" prefHeight="39.0" prefWidth="145.0" ripplerFill="#0f9d58" style="-fx-background-color: white;" text="Log In" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Button fx:id="button55" layoutX="424.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#button55" text="Button" />
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="14.0" text="SA" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="14.0" text="FARI" textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1325.0" layoutY="12.0" onMouseClicked="#exitBtn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+      </ImageView>
+      <ImageView id="minBtn" fitHeight="27.0" fitWidth="27.0" layoutX="1278.0" layoutY="12.0" onMouseClicked="#minBtn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minimize (1).png" />         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

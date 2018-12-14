@@ -1,0 +1,17 @@
+.mybtn{
+    -fx-background-radius:19;
+    -fx-border-radius: 20;
+    -fx-border-color:white;
+    -fx-webkit-transition-duration: 0.4s;
+    -fx-transition-duration: 0.4s;
+}
+.mybtn:hover{
+    -fx-background-color: #08a966;
+    -fx-text-fill: white;
+}
+
+.mycombo{
+    -fx-font-size:18;
+    -fx-text-inner-color:white;
+    -fx-prompt-text-fill:white;
+}

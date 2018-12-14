@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <ImageView fx:id="img_mainLogo" fitHeight="728.0" fitWidth="1366.0">
+         <image>
+            <Image url="@../images/mainLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" text="SA" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="14.0" text="FARI" textFill="#ab9191">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_contactUs" layoutX="107.0" layoutY="18.0" onMouseClicked="#lbl_contactUs_action" text="Contact Us !" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1326.0" layoutY="12.0" onMouseClicked="#exitBtn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1230.0" layoutY="12.0" onMouseClicked="#backBtn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back-left-arrow-square-button-outline.png" />
+         </image>
+      </ImageView>
+      <ImageView id="minBtn" fitHeight="27.0" fitWidth="27.0" layoutX="1278.0" layoutY="12.0" onMouseClicked="#minBtn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minimize (1).png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="bt_offers" buttonType="RAISED" layoutX="580.0" layoutY="352.0" onAction="#bt_offers_action" prefHeight="71.0" prefWidth="206.0" ripplerFill="#08a966" styleClass="mybtn" text="Offers" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../buttons.css" />
+            <URL value="@../Style of everything.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXButton fx:id="bt_orders" buttonType="RAISED" layoutX="579.0" layoutY="454.0" onAction="#bt_orders_action" prefHeight="71.0" prefWidth="206.0" ripplerFill="#08a966" styleClass="mybtn" text="Make an Order" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../buttons.css" />
+            <URL value="@../Style of everything.css" />
+         </stylesheets>
+      </JFXButton>
+   </children>
+</AnchorPane>
