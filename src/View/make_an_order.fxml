@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.make_an_order">
+    <children>
+        <ImageView fitHeight="1080" fitWidth="1920">
+            <image>
+                <Image url="@../images/main_no_logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1880.0" layoutY="20.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/exit.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1800.0" layoutY="20.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/back.png" />
+            </image>
+        </ImageView>
+        <ImageView id="minBtn" fitHeight="27.0" fitWidth="27.0" layoutX="1840.0" layoutY="20.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/minimize.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="690.0" layoutY="150.0" prefHeight="700.0" prefWidth="550.0" style="-fx-border-color: white; -fx-border-radius: 130; -fx-border-width: 4;">
+            <children>
+                <JFXComboBox fx:id="location" focusColor="#08af6a" labelFloat="true" layoutX="60.0" layoutY="190.0" prefHeight="46.0" prefWidth="422.0" promptText="Location" styleClass="mycombo_green" stylesheets="@../style/button.css" unFocusColor="#08af6a">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="alexandria" />
+                            <String fx:value="aswan" />
+                            <String fx:value="cairo" />
+                            <String fx:value="sharm aLsheikh" />
+                        </FXCollections>
+                    </items>
+                </JFXComboBox>
+                <JFXComboBox fx:id="duration" focusColor="#08af6a" labelFloat="true" layoutX="60.0" layoutY="287.0" prefHeight="46.0" prefWidth="422.0" promptText="Duration" styleClass="mycombo_green" stylesheets="@../style/button.css" unFocusColor="#08af6a">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="3 days" />
+                            <String fx:value="4 days" />
+                            <String fx:value="5 days" />
+                            <String fx:value="6 days" />
+                            <String fx:value="1 week" />
+                        </FXCollections>
+                    </items>
+                </JFXComboBox>
+                <JFXComboBox fx:id="transportation" focusColor="#08af6a" labelFloat="true" layoutX="60.0" layoutY="387.0" prefHeight="46.0" prefWidth="422.0" promptText="Transportation" styleClass="mycombo_green" stylesheets="@../style/button.css" unFocusColor="#08af6a">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="car" />
+                            <String fx:value="minibus" />
+                            <String fx:value="bus" />
+                            <String fx:value="super jet" />
+                            <String fx:value="train" />
+                        </FXCollections>
+                    </items>
+                </JFXComboBox>
+                <JFXComboBox fx:id="rate" focusColor="#08af6a" labelFloat="true" layoutX="60.0" layoutY="487.0" prefHeight="46.0" prefWidth="422.0" promptText="Rate" styleClass="mycombo_green" stylesheets="@../style/button.css" unFocusColor="#08af6a">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="3 Stars" />
+                            <String fx:value="4 Stars" />
+                            <String fx:value="5 Stars" />
+                            <String fx:value="6 Stars" />
+                            <String fx:value="7 Stars" />
+                            <String fx:value="8 Stars" />
+                            <String fx:value="9 Stars" />
+                            <String fx:value="10 Stars" />
+                        </FXCollections>
+                    </items>
+                </JFXComboBox>
+                <Label alignment="BOTTOM_CENTER" layoutX="209.0" layoutY="105.0" prefHeight="27.0" prefWidth="124.0" text="Make an order" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="237.0" layoutY="28.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/clipboard.png" />
+                    </image>
+                </ImageView>
+                <JFXButton buttonType="RAISED" layoutX="203.0" layoutY="605.0" onAction="#confirm" ripplerFill="#08af6a" styleClass="mybtn" stylesheets="@../style/button.css" text="Submit" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+      <Label layoutX="1697.0" layoutY="20.0" onMouseClicked="#contact_us" text="contact us" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+
+    </children>
+</AnchorPane>

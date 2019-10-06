@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0"
+            prefWidth="1410.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.contact_us">
+    <children>
+        <ImageView fitHeight="770.0" fitWidth="1400.0" layoutX="7.5" layoutY="5.0"
+                   preserveRatio="true" smooth="false">
+            <image>
+                <Image url="@../images/contact_us.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1356.0" layoutY="14.0" onMouseClicked="#exit"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/exit.png"/>
+            </image>
+        </ImageView>
+        <ImageView id="minBtn" fitHeight="27.0" fitWidth="27.0" layoutX="1316.0" layoutY="14.0"
+                   onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/minimize.png"/>
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="347.0" layoutY="248.0" prefHeight="447.0" prefWidth="718.0"
+                    style="-fx-border-color: white; -fx-border-width: 4; -fx-border-radius: 50;">
+            <children>
+                <Label layoutX="50.0" layoutY="50.0" text="E-Mail" textFill="#000000a9">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="50.0" layoutY="150.0" text="Phone" textFill="#000000a9">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="37.0" layoutY="350.0" text="Address" textFill="#000000a9">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="73.0" layoutY="250.0" text="Fax" textFill="#000000a9">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="180.0" layoutY="50.0" text="Safari.travels@gmail.com" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="180.0" layoutY="150.0" text="+2012-7359-2309" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="180.0" layoutY="350.0" text="Alzhor St, Smouha, Alexandria" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="180.0" layoutY="250.0" text="2564785" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="33.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

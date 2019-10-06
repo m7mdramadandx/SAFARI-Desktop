@@ -1,0 +1,53 @@
+.mybtn{
+    -fx-background-color:#08AF6A;
+    -fx-background-radius:15;
+    -fx-text-fill:white;
+    -fx-border-radius:15;
+    -fx-webkit-transition-duration: 0.5s;
+    -fx-transition-duration: 0.5s;
+}
+
+.mybtn:hover{
+    -fx-background-color:white;
+    -fx-text-fill: #08AF6A;
+}
+
+.mybtn_blue{
+    -fx-background-color:#1368E8;
+    -fx-background-radius:15;
+    -fx-text-fill:white;
+    -fx-border-radius:15;
+    -fx-webkit-transition-duration: 0.5s;
+    -fx-transition-duration: 0.5s;
+}
+
+.mybtn_blue:hover{
+    -fx-background-color:white;
+    -fx-text-fill: #1368E8;
+}
+.mybtn_red{
+    -fx-background-color:red;
+    -fx-background-radius:15;
+    -fx-text-fill:white;
+    -fx-border-radius:15;
+    -fx-webkit-transition-duration: 0.5s;
+    -fx-transition-duration: 0.5s;
+}
+
+.mybtn_red:hover{
+    -fx-background-color:white;
+    -fx-text-fill: red;
+}
+
+.mycombo{
+    -fx-font-size:18;
+    -fx-text-inner-color:#1368E8;
+    -fx-prompt-text-fill:#1368E8;
+
+}
+.mycombo_green{
+    -fx-font-size:22;
+    -fx-text-inner-color:white;
+    -fx-prompt-text-fill:white;
+
+}

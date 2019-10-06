@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.sign_up">
+    <children>
+        <ImageView fitHeight="1080" fitWidth="1920">
+            <image>
+                <Image url="@../images/main_no_logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1880.0" layoutY="20.0" onMouseClicked="#exitBtn" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/exit.png" />
+            </image>
+        </ImageView>
+        <ImageView id="minBtn" fitHeight="27.0" fitWidth="27.0" layoutX="1840.0" layoutY="20.0" onMouseClicked="#minBtn" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/minimize.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1797.0" layoutY="20.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/back.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="664.0" layoutY="228.0" prefHeight="786.0" prefWidth="593.0" style="-fx-border-color: WHITE; -fx-border-radius: 130; -fx-border-width: 4;">
+            <children>
+                <JFXTextField fx:id="full_name" focusColor="#08a966" labelFloat="true" layoutX="119.0" layoutY="125.0" prefHeight="46.0" prefWidth="356.0" promptText="Full Name" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="age" focusColor="#08a966" labelFloat="true" layoutX="119.0" layoutY="225.0" prefHeight="46.0" prefWidth="356.0" promptText="Age" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="phone" focusColor="#08a966" labelFloat="true" layoutX="119.0" layoutY="325.0" prefHeight="46.0" prefWidth="356.0" promptText="Phone" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="password" focusColor="#08a966" labelFloat="true" layoutX="119.0" layoutY="425.0" prefHeight="46.0" prefWidth="356.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXPasswordField fx:id="confirm_password" focusColor="#08a966" labelFloat="true" layoutX="119.0" layoutY="525.0" prefHeight="46.0" prefWidth="356.0" promptText="Confirm Password" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXButton fx:id="confirm" buttonType="RAISED" layoutX="235.0" layoutY="652.0" onAction="#confirm" ripplerFill="#12d72f" styleClass="mybtn" stylesheets="@../style/button.css" text="CONFIRM">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="162.0" layoutY="723.0" prefHeight="27.0" prefWidth="207.0" text="Already has an account!" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbl_login" layoutX="369.0" layoutY="723.0" onMouseClicked="#login" prefHeight="27.0" prefWidth="63.0" text="Login">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="email_lab" layoutX="455.0" layoutY="348.0" prefHeight="38.0" prefWidth="124.0" textFill="#ff3d3d" />
+                <Label fx:id="msg" layoutX="218.0" layoutY="598.0" textFill="#e80d0d">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Label layoutX="1696.0" layoutY="20.0" onMouseClicked="#contact_us" text="contact us" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+    </children>
+</AnchorPane>

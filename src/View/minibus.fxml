@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="940.0" prefWidth="1750.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.minibus">
+    <children>
+        <ImageView fitHeight="940.0" fitWidth="1750.0">
+            <image>
+                <Image url="@../images/light_screen.png" />
+            </image>
+        </ImageView>
+
+        <Label alignment="CENTER" layoutX="618.0" layoutY="34.0" text="m i n i b u s" textFill="WHITE" underline="true">
+            <font>
+                <Font name="System Bold" size="91.0" />
+            </font>
+        </Label>
+
+        <ImageView fx:id="image1" fitHeight="300.0" fitWidth="480.0" layoutX="40.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minibus/minibus1.jpg" />
+         </image></ImageView>
+        <ImageView fx:id="image2" fitHeight="300.0" fitWidth="480.0" layoutX="655.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minibus/minibus7.jpg" />
+         </image></ImageView>
+        <ImageView fx:id="image3" fitHeight="300.0" fitWidth="480.0" layoutX="1225.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minibus/minibus2.jpg" />
+         </image></ImageView>
+        <ImageView fx:id="image4" fitHeight="300.0" fitWidth="480.0" layoutX="40.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minibus/minibus3.jpg" />
+         </image></ImageView>
+        <ImageView fx:id="image5" fitHeight="300.0" fitWidth="480.0" layoutX="655.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minibus/minibus5.jpg" />
+         </image></ImageView>
+        <ImageView fx:id="image6" fitHeight="300.0" fitWidth="480.0" layoutX="1225.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/minibus/minibus6.jpg" />
+         </image></ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1692.0" layoutY="20.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/exit.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="1650.0" layoutY="20.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/minimize.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
