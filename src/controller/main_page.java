@@ -121,9 +121,10 @@ public class main_page implements Initializable {
     public void login(ActionEvent event) {
 
         if (!phone.getText().isEmpty() && !password.getText().isEmpty()) {
-            if (phone.getText().equals("admin") && password.getText().equals("admin")) {
-                staff_home_stage.show();
+            if (phone.getText().equals("a") && password.getText().equals("a")) {
+                profile_stage.show();
                 Main.main_page_stage.close();
+
             }
             try {
                 connectionDB c = new connectionDB();

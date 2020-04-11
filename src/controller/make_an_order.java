@@ -15,7 +15,7 @@ public class make_an_order implements Initializable {
     public JFXComboBox duration;
     public JFXComboBox transportation;
     public JFXComboBox rate;
-    private static Stage special_offer_stage = new Stage();
+    private static final Stage special_offer_stage = new Stage();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 

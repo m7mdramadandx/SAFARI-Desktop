@@ -10,7 +10,7 @@ public class connectionDB {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection
+            con = DriverManager.getConnection
                     ("jdbc:mysql://localhost:3306/safari", "root", "");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();

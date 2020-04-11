@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class sign_up implements Initializable {
-    private static Stage profile_stage = new Stage();
+    private static final Stage profile_stage = new Stage();
     private double xOffset;
     private double yOffset;
 
@@ -61,6 +61,8 @@ public class sign_up implements Initializable {
             if (full_name.getText().isEmpty() && phone.getText().isEmpty() && password.getText().isEmpty() && age.getText().isEmpty() && confirm_password.getText().isEmpty()) {
                 msg.setText("All fields are required");
             } else if (password.getText().equals(confirm_password.getText())) {
+                profile_stage.show();
+
                 connectionDB c = new connectionDB();
                 Connection con = c.getConnection();
                 PreparedStatement p = con.prepareStatement(" insert into user (full_name, age, phone,password) values ( ?,?,?,?)");
