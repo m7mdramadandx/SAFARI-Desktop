@@ -1,5 +1,5 @@
 # SAFARI
-Desktop application for booking full trips in Alexandria, Aswan, Cairo and Shamr ElSheikh according to given offers aslo, added admin role to manage the offers
+Desktop application for booking full trips in Alexandria, Aswan, Cairo and Sharm ElSheikh according to given offers also, added admin role to manage the offers
 
 
 ## Built With
