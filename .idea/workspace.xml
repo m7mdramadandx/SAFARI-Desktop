@@ -221,6 +221,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1586547147146" duration="572000" />
       <workItem from="1586547804526" duration="11937000" />
+      <workItem from="1590561401835" duration="93000" />
     </task>
     <servers />
   </component>
@@ -246,6 +247,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -284,6 +286,10 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="498" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1586630475266" />
+    <state x="209" y="68" key="new project wizard" timestamp="1590561499054">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="209" y="68" key="new project wizard/0.30.1536.834@0.30.1536.834" timestamp="1590561499054" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
